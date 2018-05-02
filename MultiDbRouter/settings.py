@@ -29,7 +29,7 @@ if DJANGO_ENV == 'local':
     DEBUG = True
     ALLOWED_HOSTS = ['*']
 else:
-    DEBUG = False
+    DEBUG = True
     ALLOWED_HOSTS = ['multidbrouter-heroku.herokuapp.com']
 # Application definition
 
@@ -84,6 +84,20 @@ DATABASES = {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': os.path.join(BASE_DIR, 'notifications.sqlite3'),
     }
+    # 'default': {
+    #     'NAME': 'app_data',
+    #     'ENGINE': 'django.db.backends.postgresql',
+    #     'USER': 'postgres_user',
+    #     'PASSWORD': 's3krit'
+    # },
+    # 'users': {
+    #     'NAME': 'user_data',
+    #     'ENGINE': 'django.db.backends.mysql',
+    #     'USER': 'mysql_user',
+    #     'PASSWORD': 'priv4te'
+    # }
+
+
 }
 
 
