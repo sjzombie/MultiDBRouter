@@ -30,7 +30,7 @@ if DJANGO_ENV == 'local':
     ALLOWED_HOSTS = ['*']
 else:
     DEBUG = False
-    ALLOWED_HOSTS = ['.herokuapp.com']
+    ALLOWED_HOSTS = ['multidbrouter-heroku.herokuapp.com']
 # Application definition
 
 INSTALLED_APPS = [

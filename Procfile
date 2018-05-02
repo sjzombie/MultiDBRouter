@@ -1,2 +1,2 @@
 release: python manage.py migrate
-web: gunicorn register.wsgi:application --log-file -
+web: gunicorn MultiDbRouter.wsgi:application --log-file -
